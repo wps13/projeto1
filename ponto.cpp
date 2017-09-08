@@ -54,7 +54,7 @@ ponto sub(ponto p1)//subtrai x e y atual com as fornecidas, gerando novo ponto
 
 float norma()//Calcula a distância do ponto para a origem do sistema de coordenadas
 {
-    //n é a norma
+    //n é a norma, foi considera a origem como (0,0)
     float n;
     n=sqrt(pwd(x,2)+pwd(y,2));
 
