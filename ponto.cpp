@@ -6,35 +6,40 @@ ponto::ponto()
 
 }
 
-
-void setX(float _x) //define a coordenada x do ponto
+//define a coordenada x do ponto
+void setX(float _x)
 {
     x=_x;
 
 }
 
-void setY(float _y)//define a coordenada y do ponto
+//define a coordenada y do ponto
+void setY(float _y)
 {
     y=_y;
 }
 
-void setXY(float _x, float _y)  //define x e y do ponto
+//define as coordenadas x e y do ponto
+void setXY(float _x, float _y)
 {
     x=_x;
     y=_y;
 }
 
-float getX() //retorna a coordenada x do ponto
+//retorna a coordenada x do ponto
+float getX()
 {
     return x;
 }
 
-float getY() //retorna a coordenada y do ponto
+//retorna a coordenada y do ponto
+float getY()
 {
     return y;
 }
 
-ponto add(ponto p1)//soma x e y atual com as fornecidas, gerando novo ponto
+//soma as coordenadas x e y atual com as coordenadas fornecidas, gerando novo ponto
+ponto add(ponto p1)
 {
     ponto p2;
     p2.x=x+p1.x;
@@ -43,7 +48,8 @@ ponto add(ponto p1)//soma x e y atual com as fornecidas, gerando novo ponto
     return p2;
 }
 
-ponto sub(ponto p1)//subtrai x e y atual com as fornecidas, gerando novo ponto
+//subtrai as coordenas x e y atual com as coordenadas fornecidas, gerando novo ponto
+ponto sub(ponto p1)
 {
     ponto p2;
     p2.x=x-p1.x;
@@ -52,19 +58,23 @@ ponto sub(ponto p1)//subtrai x e y atual com as fornecidas, gerando novo ponto
     return p2;
 }
 
-float norma()//Calcula a distância do ponto para a origem do sistema de coordenadas
+//Calcula a distância do ponto para a origem(0,0) do sistema de coordenadas
+float norma()
 {
-    //n é a norma, foi considera a origem como (0,0)
+    //n é a norma
     float n;
     n=sqrt(pwd(x,2)+pwd(y,2));
 
 }
 
-void translada(float a, float b)//Translada o ponto (x,y) de (+a,+b)
+//Translada o ponto na posição (x,y) para a posição (x+a,y+b)
+void translada(float a, float b)
 {
-
+    x+=a;
+    y+=b;
 }
 
+//Imprime no console os valores das coordenadas x e y
 void imprime()
 {
     cout<<"Coordenada X: "<<x<<", coordenada Y: "<<y<<endl;
