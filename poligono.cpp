@@ -5,3 +5,10 @@ poligono::poligono()
 
 }
 
+poligono::~poligono()
+{
+
+}
+
+
+
