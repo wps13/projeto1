@@ -5,14 +5,14 @@
 class poligono
 {
 public:
-    //construtor defaul
+    //construtor default
     poligono();
 
     //destrutor
     ~poligono();
 
     //define vertices
-    void setVertice(ponto p1);
+    void setVertice(int x,int y);
 
     //retorna vertices
     int getVertices();

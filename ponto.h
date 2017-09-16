@@ -9,7 +9,8 @@ private :
     float x,y;
 
 public:
-    ponto();
+    ponto(float _x,float _y);
+    ~ponto();
     void setX(float _x);
     void setY(float _y);
     void setXY(float _x,float _y);
@@ -20,6 +21,7 @@ public:
     float norma();
     void translada(float a,float b);
     void imprime();
+
 
 
 };
