@@ -4,6 +4,11 @@
 
 using namespace std;
 
+ponto::ponto()
+{
+
+}
+
 ponto::ponto(float _x=0, float _y=0)
 {
     x=_x;
@@ -50,8 +55,8 @@ float ponto::getY()
 ponto ponto::add(ponto p1)
 {
     ponto p2;
-    p2.x=x+p1.x;
-    p2.y=y+p1.y;
+    p2.x = x + p1.x;
+    p2.y = y + p1.y;
 
     return p2;
 }
