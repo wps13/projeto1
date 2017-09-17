@@ -62,13 +62,13 @@ ponto ponto::add(ponto p1)
 }
 
 //subtrai as coordenas x e y atual com as coordenadas fornecidas, gerando novo ponto
-ponto ponto::sub(ponto p1)
+ponto ponto::sub(ponto ponto1)
 {
-    ponto ponto2;
-    ponto2.x=x-p1.x;
-    ponto2.y=y-p1.y;
+    ponto p3;
+    p3.x = x - ponto1.x;
+    p3.y = y - ponto1.y;
 
-    return ponto2;
+    return p3;
 }
 
 //Calcula a distância do ponto para a origem(0,0) do sistema de coordenadas

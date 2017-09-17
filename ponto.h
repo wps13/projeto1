@@ -34,7 +34,7 @@ public:
     ponto add(ponto p1);
 
     //subtrai o ponto atual do ponto dado
-    ponto sub(ponto p1);
+    ponto sub(ponto ponto1);
 
     //retorna a norma do ponto
     float norma();
