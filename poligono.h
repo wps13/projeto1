@@ -19,7 +19,7 @@ public:
     poligono(ponto vetp[], int t);
 
     //define vertices
-    void setVertice(ponto p);
+    void setVertice(ponto pontoNovo);
 
     //retorna vertices
     int getVertices();
@@ -28,13 +28,13 @@ public:
     float area();
 
     //translada o poligono para nova posição
-    void transladaPoligono(int a, int b);
+    void transladaPoligono(int pos1, int pos1Y);
 
     //imprime polígono
     void imprime();
 
     //rotaciona o poligono de acordo com angulo dado
-    void rotaciona(float angulo);
+    void rotaciona(float angulo, ponto pontoPos);
 
     //destrutor
     ~poligono();
