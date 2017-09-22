@@ -1,5 +1,6 @@
 #include "poligono.h"
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -41,14 +42,15 @@ int poligono::getVertices()
 //calcula e retorna a área do polígono usando a fórmula de shoelace
 float poligono::area()
 {
-    float sum=0;
+    float sum1=0, sum2=0;
 
     for (i=0;i<(n-1);i++)
     {
-        sum += ((vp[i].x * vp[i+1].y) - (vp[i+1].x * vp[i].y));
+        sum1 += (vp[i].x * vp[i+1].y);
+        sum2 += (vp[i+1].x * vp[i].y);
     }
 
-    return ((1/2)*(sum + (vp[n-1]*vp[0].y) - (vp[0].x * vp[n-1])));
+    return ((1/2)*abs((sum1 + (vp[n-1]*vp[0].y) -sum2 - (vp[0].x * vp[n-1]))));
 }
 
 //muda o polígono de posição
@@ -68,8 +70,23 @@ void poligono::imprime()
     }
 }
 
+//rotaciona o poligono à partir de ângulo fornecido
 void poligono::rotaciona(float angulo,ponto pontoPos)
 {
+    float cosseno, seno;
+    ponto p;
+
+    cosseno = cos(angulo);
+    seno=sin(angulo);
+
+    p.x = pontoPos*cosseno;
+    p.y = pontoPos*seno;
+
+    for(int i=0;i<n;i++){
+        vp[i].x += p.x;
+        vp[i].y += p.y;
+    }
+}
 
 }
 
