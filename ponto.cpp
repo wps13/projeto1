@@ -54,21 +54,25 @@ float ponto::getY()
 //soma as coordenadas x e y atual com as coordenadas fornecidas, gerando novo ponto
 ponto ponto::add(ponto p1)
 {
+
     ponto p2;
     p2.x = x + p1.x;
     p2.y = y + p1.y;
 
     return p2;
+
 }
 
 //subtrai as coordenas x e y atual com as coordenadas fornecidas, gerando novo ponto
-ponto ponto::sub(ponto ponto1)
+ponto ponto::sub( ponto p1)
 {
-    ponto p3;
-    p3.x = x - ponto1.x;
-    p3.y = y - ponto1.y;
 
-    return p3;
+    ponto p2;
+    p2.x = x - p1.x;
+    p2.y = y - p1.y;
+
+    return p2;
+
 }
 
 //Calcula a distância do ponto para a origem(0,0) do sistema de coordenadas

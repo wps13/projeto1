@@ -6,10 +6,7 @@
 using namespace std;
 
 int main()
-{
-    ponto o;
-
-    o.setXY(5,9); 
+{ 
 
     retangulo ret1(0.0,0.0,3.0,4.0);
 
@@ -22,9 +19,6 @@ int main()
     y=(ret1.getLargura())/2;
 
     centroMassa.setXY(x,y);
-
-    o.imprime();
-
 
     ret1.area();
 

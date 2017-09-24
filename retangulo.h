@@ -11,6 +11,7 @@ public:
     float x1,y1,larg,alt;
 
 public:
+    retangulo();
     retangulo(float x_, float y_,  float altura, float largura);
     void setXR(float _x);
     void setYR(float _y);

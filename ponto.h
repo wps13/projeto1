@@ -7,6 +7,7 @@ class ponto{
 public:
     float x,y;
 
+
 public:
 
     //construtor default
@@ -34,7 +35,7 @@ public:
     ponto add(ponto p1);
 
     //subtrai o ponto atual do ponto dado
-    ponto sub(ponto ponto1);
+    ponto sub(ponto p1);
 
     //retorna a norma do ponto
     float norma();

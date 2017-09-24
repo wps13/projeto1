@@ -1,6 +1,6 @@
 #include "retangulo.h"
 
-
+//construtor da classe
 retangulo::retangulo(float x_, float y_, float altura, float largura) : poligono()
 {
     x=x_;
@@ -17,11 +17,13 @@ retangulo::retangulo(float x_, float y_, float altura, float largura) : poligono
 
 }
 
+//define a posição X do retângulo para valor inserido
 void retangulo::setXR(float _x)
 {
 
 }
 
+//define a posição y do retângulo para valor inserido
 void retangulo::setYR(float _y)
 {
 
@@ -39,11 +41,13 @@ void retangulo::setAltura(float altura)
     alt=altura;
 }
 
+//retorna a posição X do retÂngulo
 float retangulo::getXR()
 {
     return x;
 }
 
+//retorna a posição y do retÂngulo
 float retangulo::getYR()
 {
     return y;
